@@ -1,0 +1,12 @@
+export { default as authReducer } from "./auth/authSlice";
+export { default as bannerReducer } from "./banner/bannerSlice";
+export { default as categoryReducer } from "./category/categorySlice";
+export { default as cartReducer } from "./cart/cartSlice";
+export { default as feedbackReducer } from "./feedback/feedbackSlice";
+export { default as newsReducer } from "./news/newsSlice";
+export { default as orderReducer } from "./order/orderSlice";
+export { default as productReducer } from "./product/productSlice";
+export { default as promotionReducer } from "./promotion/promotionSlice";
+export { default as shoppingSessionReducer } from "./shoppingSession/shoppingSessionSlice";
+export { default as userReducer } from "./user/userSlice";
+export { default as dashboardReducer } from "./dashboard/dashboardSlice";

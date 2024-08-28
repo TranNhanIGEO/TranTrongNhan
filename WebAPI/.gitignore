@@ -1,0 +1,39 @@
+# Build results
+project.lock.json
+project.fragment.lock.json
+artifacts/
+debug/
+release/
+publish/
+bin/
+obj/
+
+# Resharper
+_ReSharper.Caches/
+TestResults
+*.dotCover
+*.ncrunch*
+*.ncrunchsolution*
+*.build.cs
+
+# Visual Studio files
+.vscode/
+.vs/
+*.suo
+*.user
+*.rsuser
+*.rsbak
+*.userosscache
+*.sln.docstates
+
+# Logs
+.log
+.history/
+
+# App settings
+secrets.json
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
+appsettings.Secret.json
+appsettings.json

@@ -1,0 +1,311 @@
+// Font
+.ff-inter {
+    font-family: Inter, sans-serif
+}
+
+.ff-roboto {
+    font-family: Roboto, sans-serif
+}
+
+.ff-montserrat {
+    font-family: Montserrat, sans-serif
+}
+
+.ff-playball {
+    font-family: Playball, system-ui
+}
+
+.ff-pacifico {
+    font-family: Pacifico, cursive
+}
+
+// Width and height
+.w-100vw{
+    width: 100vw;
+}
+
+.w-75vw{
+    width: 75vw;
+}
+
+.w-50vw{
+    width: 50vw;
+}
+
+.w-25vw{
+    width: 25vw;
+}
+
+.h-100vh{
+    height: 100vh; 
+}
+
+.h-75vh{
+    height: 75vh; 
+}
+
+.h-50vh{
+    height: 50vh; 
+}
+
+.h-25vh{
+    height: 25vh; 
+}
+
+// Overlay
+.element-overlay {
+    @include position-base(absolute, 0, unset, unset, 0);
+    @include box-base(100%, 100%);
+}
+
+// Image
+.element-image {
+    object-fit: cover;
+    border-radius: inherit;
+    @include box-base(100%, 100%);
+}
+  
+// Background image
+.element-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: inherit;
+    @include box-base(100%, 100%);
+}
+  
+.element-bg-image__fixed {
+    @extend .element-bg-image;
+    background-attachment: fixed;
+}
+  
+.element-bg-image__scroll {
+    @extend .element-bg-image;
+    background-attachment: scroll;
+}
+
+// Animation
+.element-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity $transition-slower ease-out, transform $transition-slower ease-out;
+    &.showing {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Loader
+.element-loader {
+    @include box-base(100%, 100%);
+    @include element-flex-center;
+    .loading {
+        height: 15px !important;
+        width: 15px !important;
+        aspect-ratio: 1;
+        border-radius: $border-radius-circle;
+        animation: loading 1s infinite linear alternate;
+        @keyframes loading {
+            0%  {box-shadow: 20px 0 #000, -20px 0 #0002;background: #000 }
+            33% {box-shadow: 20px 0 #000, -20px 0 #0002;background: #0002}
+            66% {box-shadow: 20px 0 #0002,-20px 0 #000; background: #0002}
+            100%{box-shadow: 20px 0 #0002,-20px 0 #000; background: #000 }
+        }
+    }
+}
+
+// Scrollbar
+.element-scrollable {
+    overflow: overlay;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        background: transparent;
+    }
+      
+    &:hover::-webkit-scrollbar {
+        background: rgba(220, 220, 220, 0.678);
+    }
+      
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 4px;
+    }
+      
+    &:hover::-webkit-scrollbar-thumb {
+        background: #555;
+    }  
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+      
+
+    &:hover::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+}
+
+
+// Flexbox
+.element-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.element-flex-center__ver {
+    display: flex;
+    align-items: center;
+}
+  
+.element-flex-center__hor {
+    display: flex;
+    justify-content: center;
+}
+  
+.element-flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.element-flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.element-flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+  
+.element-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.element-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+  
+.element-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Position
+.element-position__top {
+    position: absolute;
+    top: 0;
+}
+  
+.element-position__bottom {
+    position: absolute;
+    bottom: 0;
+}
+  
+.element-position__left {
+    position: absolute;
+    left: 0;
+}
+  
+.element-position__right {
+    position: absolute;
+    right: 0;
+}
+  
+.element-position__topLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+.element-position__topCenter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+  
+.element-position__topRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+  
+.element-position__bottomLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  
+.element-position__bottomCenter {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+  
+.element-position__bottomRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+  
+.element-position__center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.element-position__centerLeft {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+  
+.element-position__centerRight {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+}
+
+// Common
+.element-container {
+    position: relative;
+    padding-top: map-get($spacers, 6);
+    padding-bottom: map-get($spacers, 6);
+}
+
+// Event  
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.calendar-events {
+    cursor: move;
+}
+
+// Typography
+.list-disc {
+    list-style-type: disc;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+// Unset all styles
+.no-style {
+    all: unset;
+}

@@ -1,0 +1,40 @@
+@import '/src/styles/bases/variables';
+@import '/src/styles/utilities/mixin';
+
+.categories-card {
+  position: relative;
+
+  .categories-card-image {
+    border: 5px $border-style $border-color;
+
+    img {
+      @include box-base(200px, 200px);
+      transition: all $transition-slower;
+    }
+
+    @include screen-down-md {
+      img {
+        @include box-base(175px, 175px);
+      }
+    }
+  }
+  .categories-card-caption {
+    color: $white;
+    
+    p {
+      transition: all $transition-slower;
+    }
+  }
+  
+  &:hover .categories-card-image {
+    border-color: $yellow;
+  }
+  
+  &:hover .categories-card-caption {
+    color: $yellow;
+  }
+
+  &:hover .categories-card-image img {
+    transform: $image-scale-inner;
+  }
+}

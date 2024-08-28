@@ -1,0 +1,121 @@
+// Responsive
+@mixin screen-down-sm {
+  @media (max-width: $screen-sm) {
+    @content;
+  }
+}
+
+@mixin screen-down-md {
+  @media (max-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin screen-down-lg {
+  @media (max-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin screen-down-xl {
+  @media (max-width: $screen-xl) {
+    @content;
+  }
+}
+
+@mixin screen-down-xxl {
+  @media (max-width: $screen-xxl) {
+    @content;
+  }
+}
+
+@mixin screen-up-sm {
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}
+
+@mixin screen-up-md {
+  @media (min-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin screen-up-lg {
+  @media (min-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin screen-up-xl {
+  @media (min-width: $screen-xl) {
+    @content;
+  }
+}
+
+@mixin screen-up-xxl {
+  @media (min-width: $screen-xxl) {
+    @content;
+  }
+}
+
+// Box
+@mixin box-base($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// Pseudo
+@mixin pseudo-base($width, $height, $display: inline-block, $position: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $position;
+  @include box-base($width, $height);
+}
+
+// Flexbox
+@mixin element-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin element-flex-center__ver {
+  display: flex;
+  align-items: center;
+}
+
+@mixin element-flex-center__hor {
+  display: flex;
+  justify-content: center;
+}
+
+// Position
+@mixin position-base($position, $top: unset, $right: unset, $bottom: unset, $left: unset) {
+  position: $position;
+  @if $top!= unset {
+    top: $top;
+  }
+  @if $right!= unset {
+    right: $right;
+  }
+  @if $bottom!= unset {
+    bottom: $bottom;
+  }
+  @if $left!= unset {
+    left: $left;
+  }
+}
+
+// Animation
+@mixin fade-animation($type) {
+  @if $type== 'hide' {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity .5s;
+  } @else if $type== 'show' {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity .5s;
+  }
+}

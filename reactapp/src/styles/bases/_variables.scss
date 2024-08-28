@@ -1,0 +1,307 @@
+// Colors
+$white: #ffffff !default;
+$gray-100: #f6f9fc !default;
+$gray-200: #eaeff4 !default;
+$gray-300: #dfe5ef !default;
+$gray-400: #7c8fac !default;
+$gray-500: #5a6a85 !default;
+$gray-600: #2a3547 !default;
+$black: #000000 !default;
+
+// Color
+$blue: #5d87ff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #d40e2e !default;
+$orange: #fd7e14 !default;
+$yellow: #ffae1f !default;
+$green: #13deb9 !default;
+$teal: #20c997 !default;
+$cyan: #539bff !default;
+$brown: #2c4506 !default;
+
+// Main Colors
+$primary: $blue !default;
+$secondary: #49beff !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$muted: $gray-400 !default;
+$dark: $gray-600 !default;
+$dark-light: $gray-600 !default;
+$light-gray: $gray-100 !default;
+
+// light colors
+$light-primary: #ecf2ff;
+$light-secondary: #e8f7ff;
+$light-info: #ebf3fe;
+$light-success: #e6fffa;
+$light-warning: #fef5e5;
+$light-danger: #fbf2ef;
+$light-indigo: #ebf3fe;
+
+// Theme Colorss
+$theme-colors: (
+  'brown': $brown,
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+  'muted': $muted,
+  'indigo': $indigo,
+  'light-primary': $light-primary,
+  'light-secondary': $light-secondary,
+  'light-info': $light-info,
+  'light-success': $light-success,
+  'light-warning': $light-warning,
+  'light-danger': $light-danger,
+  'light-indigo': $light-indigo,
+  'dark-light': $dark-light,
+  'light-gray': $light-gray,
+) !default;
+
+// Spacer
+$spacer: 1.6rem !default;
+$spacers: (
+  0: 0,
+  // ~~ 0px
+  1: $spacer * 0.25,
+  // ~~ 4px
+  2: $spacer * 0.5,
+  // ~~ 8px
+  3: 1rem,
+  // ~~ 10px
+  4: 1rem * 1.2,
+  // ~~ 12px
+  5: $spacer,
+  // ~~ 16px
+  6: 1rem * 2,
+  // ~~ 20px
+  7: $spacer * 1.5,
+  // ~~ 24px
+  8: $spacer * 1.75,
+  // ~~ 28px
+  9: 1rem * 4,
+  // ~~ 40px
+) !default;
+
+// Common
+$min-contrast-ratio: 1.7 !default;
+
+// Margins
+$enable-negative-margins: true !default;
+$enable-shadows: true !default;
+
+// Global
+$text-muted: $muted !default;
+$grid-gutter-width: 24px !default;
+
+// Body
+$body-bg: $white !default;
+$body-color: $black !default;
+
+// Font Family
+$font-family-base: Inter, Roboto, Montserrat, Playball, Pacifico, system-ui, sans-serif, cursive, -apple-system, Segoe UI, Ubuntu, Helvetica, Arial !default;
+
+// Font Size
+$font-size-root: 62.5% !default;
+$font-size-base: 1.6rem !default;
+
+$font-sizes: (
+  1: 1rem * 4,
+  // ~~ 40
+  2: 1rem * 2.8,
+  // ~~ 28
+  3: 1rem * 2.4,
+  // ~~ 24
+  4: 1rem * 2,
+  // ~~ 20
+  5: 1rem * 1.8,
+  // ~~ 18
+  6: 1rem * 1.6,
+  // ~~ 16
+  7: 1rem * 1.4,
+  // ~~ 14
+  8: 1rem * 1.2,
+  // ~~ 12
+  9: 1rem * 1,
+  // ~~ 10
+) !default;
+
+// Font Weight
+$font-weight-lighter: 300 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 500 !default;
+$font-weight-bolder: 700 !default;
+$font-weight-base: $font-weight-normal !default;
+
+// Line Heght
+$line-height-base: 1.5 !default;
+$line-height-sm: 1.25 !default;
+$line-height-lg: 2 !default;
+
+// Heading
+$font-size-sm: 1rem * 1.4 !default;
+$font-size-lg: 1rem * 2 !default;
+$h1-font-size: 1rem * 3.5 !default;
+$h2-font-size: 1rem * 2.8 !default;
+$h3-font-size: 1rem * 2.45 !default;
+$h4-font-size: 1rem * 2.1 !default;
+$h5-font-size: 1rem * 1.75 !default;
+$h6-font-size: 1rem * 1.4 !default;
+$headings-color: $dark !default;
+$headings-font-weight: $font-weight-bold !default;
+$heading-line-height: $line-height-sm !default;
+$heading-margin-top: 0 !default;
+$heading-margin-bottom: $spacer !default;
+
+// Border Color
+$border-style: solid !default;
+$border-color: #ebf1f6 !default;
+$border-width: 1px !default;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+) !default;
+
+// Border Radius
+
+$border-radius: 0.75rem !default;
+$border-radius-sm: 0.5rem !default;
+$border-radius-lg: 1rem !default;
+$border-radius-xl: 1.5rem !default;
+$border-radius-xxl: 2rem !default;
+$border-radius-pill: 50rem !default;
+$border-radius-2xl: $border-radius-xxl !default;
+$border-radius-circle: 50%;
+
+// Buttons
+$btn-padding-y: 8px !default;
+$btn-padding-x: 16px !default;
+$btn-font-weight: 500 !default;
+$btn-border-radius: $border-radius !default;
+$btn-box-shadow: unset !default;
+$btn-font-size: $font-size-base !default;
+$btn-border-radius-lg: 9px !default;
+
+// Card
+$card-title-color: $dark !default;
+$card-subtitle-color: $dark !default;
+$card-spacer-y: 30px !default;
+$card-spacer-x: 30px !default;
+$card-border-width: 0px !default;
+$card-border-color: #ebf1f6 !default;
+$card-border-radius: $border-radius;
+$card-box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px !default;
+
+// Badges
+$badge-font-size: $font-size-base !default;
+$badge-font-weight: $font-weight-normal !default;
+$badge-padding-y: 5px !default;
+$badge-padding-x: 10px !default;
+$badge-border-radius: 4px;
+
+// Table
+$table-cell-padding-y: 16px !default;
+$table-cell-padding-x: 16px !default;
+$table-th-font-weight: 600 !default;
+$table-striped-bg: $gray-200 !default;
+$table-hover-bg: $gray-100 !default;
+$table-border-color: $border-color !default;
+
+// Input
+$form-label-color: $gray-600;
+$form-label-font-weight: 600;
+$form-label-margin-bottom: map-get($spacers, 3) !default;
+$form-select-indicator-padding: 38px;
+$form-select-border-radius: $border-radius !default;
+$form-select-box-shadow: unset !default;
+$input-border-radius: $border-radius !default;
+$input-group-addon-bg: $gray-200 !default;
+$input-group-addon-border-color: $light !default;
+$input-border-color: $gray-300 !default;
+$input-bg: transparent !default;
+$input-color: $gray-500 !default;
+$input-placeholder-color: $gray-400 !default;
+$input-padding-y: 8px;
+$input-padding-x: 16px;
+$input-font-size: $font-size-base;
+$form-check-input-width: 1.188em;
+$form-check-min-height: 1.188em;
+$form-check-input-border: 1.25px $border-style $gray-300;
+
+// Dropdown
+$dropdown-width: 360px !default;
+$dropdown-color: $gray-400 !default;
+$dropdown-border-color: transparent !default;
+$dropdown-divider-bg: $gray-200 !default;
+$dropdown-item-padding-y: 10px !default;
+$dropdown-item-padding-x: 16px !default;
+$dropdown-font-size: $font-size-base;
+$dropdown-link-hover-bg: $gray-100 !default;
+$dropdown-link-active-bg: $gray-100 !default;
+$dropdown-link-active-color: $dark !default;
+$dropdown-box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+
+// Modal
+$modal-content-border-width: 0 !default;
+$modal-inner-padding: 32px !default;
+$modal-header-padding-y: 16px !default;
+$modal-header-padding-x: $modal-inner-padding !default;
+
+// Offcanvas
+$offcanvas-padding-y: 16px !default;
+$offcanvas-padding-x: 16px !default;
+$offcanvas-horizontal-width: 400px !default;
+
+// Toast
+$toast-max-width: 400px !default;
+$toast-padding-x: map-get($spacers, 4) !default;
+$toast-padding-y: map-get($spacers, 2) !default;
+$toast-font-size: map-get($font-sizes, 7) !default;
+$toast-box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px !default;
+$toast-spacing: 24px !default;
+
+// Breadcrumbs
+$breadcrumb-font-size: map-get($font-sizes, 7);
+
+// Navbar
+$navbar-light-color: rgba($gray-600, 1) !default;
+$navbar-light-hover-color: rgba($primary, 1) !default;
+$navbar-dark-color: rgba($gray-300, 1) !default;
+$navbar-dark-hover-color: rgba($primary, 1) !default;
+
+// Scale
+$image-scale-outer: scale(0.8);
+$image-scale-out: scale(0.9);
+$image-scale: scale(1);
+$image-scale-in: scale(1.1);
+$image-scale-inner: scale(1.2);
+
+// Transition
+$transition-faster: 250ms;
+$transition-fast: 500ms;
+$transition-slow: 750ms;
+$transition-slower: 1000ms;
+$transition-timing-default: cubic-bezier(0.08, 0.52, 0.52, 1);
+
+// Z-index
+$z-index-sidebar: 10;
+
+// Breakpoint
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;

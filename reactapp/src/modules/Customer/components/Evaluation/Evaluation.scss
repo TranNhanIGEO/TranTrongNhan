@@ -1,0 +1,14 @@
+@import '/src/styles/bases/variables';
+
+.element-evaluation {
+  .element-star {
+    color: $gray-300;
+    font-size: map-get($font-sizes, 4);
+    transition: color $transition-faster;
+  }
+
+  .element-star.selected,
+  .element-star.selected ~ .element-star {
+    color: $yellow;
+  }
+}

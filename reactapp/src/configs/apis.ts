@@ -1,0 +1,47 @@
+const apis = {
+  public: {
+    home: 'api/v1/home',
+    banner: 'api/v1/banner',
+    category: 'api/v1/category',
+    cartItem: 'api/v1/cartItem',
+    feedback: 'api/v1/feedback',
+    news: 'api/v1/news',
+    product: 'api/v1/product',
+    promotion: 'api/v1/promotion',
+    order: 'api/v1/order',
+    shoppingSession: 'api/v1/shoppingSession',
+  },
+  auth: {
+    login: 'api/v1/account/login',
+    facebookLogin: 'api/v1/account/facebook-login',
+    googleLogin: 'api/v1/account/google-login',
+    register: 'api/v1/account/register',
+    confirmEmail: 'api/v1/account/confirm-email',
+    refresh: 'api/v1/account/refresh',
+    logout: 'api/v1/account/logout',
+    forgotPassword: 'api/v1/account/forgot-password',
+    resetPassword: 'api/v1/account/reset-password',
+    changePassword: 'api/v1/user/change-password',
+    changeEmail: 'api/v1/user/change-email',
+    changeProfile: 'api/v1/user/change-profile',
+  },
+  admin: {
+    dashboard: 'api/admin/v1/dashboard',
+    banner: 'api/admin/v1/banner',
+    category: 'api/admin/v1/category',
+    feedback: 'api/admin/v1/feedback',
+    news: 'api/admin/v1/news',
+    product: 'api/admin/v1/product',
+    promotion: 'api/admin/v1/promotion',
+    user: 'api/admin/v1/user',
+    order: 'api/admin/v1/order',
+  },
+  customer: {
+    feedback: 'api/customer/v1/feedback',
+    cartItem: 'api/customer/v1/cartItem',
+    shoppingSession: 'api/customer/v1/shoppingSession',
+    order: 'api/customer/v1/order',
+  },
+};
+
+export default apis;

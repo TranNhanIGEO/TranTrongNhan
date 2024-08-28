@@ -1,0 +1,35 @@
+@import '/src/styles/bases/variables';
+@import '/src/styles/utilities/mixin';
+
+.element-dot-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.element-dot-buttons {
+  @include box-base(100%, 25px);
+  @include element-flex-center;
+}
+
+.element-dot-button {
+  @include box-base(20px, 20px);
+  border-radius: $border-radius-circle;
+  margin: map-get($spacers, 3);
+  border: $border-width $border-style $border-color;
+  background-color: $gray-400;
+  transition: all $transition-faster ease-in-out;
+  cursor: pointer;
+  &.active {
+    @include box-base(25px, 25px);
+    border-color: $gray-400;
+    background-color: $border-color;
+  }
+  &:hover {
+    border-color: $gray-300;
+    background-color: $border-color;
+  }
+}

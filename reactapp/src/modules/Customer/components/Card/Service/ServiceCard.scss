@@ -1,0 +1,14 @@
+@import '/src/styles/bases/variables';
+@import '/src/styles/utilities/mixin';
+
+.service-image {
+  @include box-base(auto, 350px);
+
+  img {
+    transition: all $transition-slower;
+  }
+  
+  &:hover img {
+    transform: $image-scale-in;
+  }
+}

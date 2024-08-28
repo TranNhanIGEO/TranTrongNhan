@@ -1,0 +1,43 @@
+@import '/src/styles/bases/variables';
+@import '/src/styles/utilities/mixin';
+
+.product-card {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15), 0px -1px 2px rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25), 0px -3px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.product-card-image {
+  position: relative;
+
+  &:hover img {
+    transform: $image-scale-in;
+  }
+
+  &:hover .product-card-action {
+    @include fade-animation('show');
+  }
+
+  .product-card-thumbnail img {
+    min-height: 200px;
+    transition: all $transition-slower;
+  }
+
+  .product-card-label {
+    @include position-base(absolute, 16px, unset, unset, 12px);
+  }
+
+  .product-card-action {
+    @include position-base(absolute, 16px, 0);
+    @include fade-animation('hide');
+    background-color: $white;
+    color: $brown;
+
+    div:hover {
+      background-color: $brown;
+      color: $white;
+    }
+  }
+}

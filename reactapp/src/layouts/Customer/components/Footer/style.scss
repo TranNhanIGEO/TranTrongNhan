@@ -1,0 +1,38 @@
+@import '/src/styles/bases/variables';
+@import '/src/styles/utilities';
+
+.footer {
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.35);
+  background-color: $brown;
+  .footer-container {
+    position: relative;
+    .footer-wrapper {
+      position: relative;
+      .footer-title {
+        color: $white;
+      }
+      .footer-content {
+        color: $gray-300;
+      }
+      .footer-message {
+        padding-right: 100px !important;
+        @include screen-down-xl {
+          padding-right: 50px !important;
+        }
+        @include screen-down-lg {
+          padding-right: 10px !important;
+        }
+      }
+      .footer-helper {
+        .footer-links a:hover {
+          text-decoration: underline;
+        }
+      }
+      .footer-contact {
+        .footer-certificates {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

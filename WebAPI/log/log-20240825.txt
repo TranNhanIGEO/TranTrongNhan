@@ -1,0 +1,126 @@
+2024-08-25 10:34:55.034 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model) in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Services\AccountService.cs:line 338
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount() in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Controllers\AccountController.cs:line 372
+2024-08-25 10:34:55.034 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model) in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Services\AccountService.cs:line 338
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount() in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Controllers\AccountController.cs:line 372
+2024-08-25 10:35:06.147 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model) in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Services\AccountService.cs:line 338
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount() in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Controllers\AccountController.cs:line 372
+2024-08-25 10:35:06.149 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model) in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Services\AccountService.cs:line 338
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount() in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Controllers\AccountController.cs:line 372
+2024-08-25 10:35:09.245 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model) in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Services\AccountService.cs:line 338
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount() in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Controllers\AccountController.cs:line 372
+2024-08-25 10:35:09.252 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model) in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Services\AccountService.cs:line 338
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount() in E:\Product\SoftKiwiFlorist\WebAPI\Areas\Account\Controllers\AccountController.cs:line 372
+2024-08-25 10:40:29.314 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 10:40:29.352 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 10:40:45.568 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 10:40:45.570 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 10:40:53.110 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 10:40:53.139 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 22:23:47.120 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 22:23:47.123 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 22:24:41.962 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 22:24:42.009 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 22:24:46.857 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 22:24:46.860 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 22:25:28.423 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 22:25:37.822 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 22:33:37.802 +07:00 [Error] NotFoundException: "Refresh token not found"
+SoftKiwiFlorist.Helpers.NotFoundException: Refresh token not found
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 23:01:39.295 +07:00 [Error] ValidationException: "Validation failed: 
+ -- NewPassword: Invalid new password Severity: Error"
+FluentValidation.ValidationException: Validation failed: 
+ -- NewPassword: Invalid new password Severity: Error
+   at SoftKiwiFlorist.Areas.Account.Services.UserService.ChangePasswordAsync(String userId, PasswordChangingModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.UserController.ChangePassword(String userId, PasswordChangingModel model)
+2024-08-25 23:01:58.220 +07:00 [Error] BadRequestException: "Current password is incorrect"
+SoftKiwiFlorist.Helpers.BadRequestException: Current password is incorrect
+   at SoftKiwiFlorist.Areas.Account.Services.UserService.ChangePasswordAsync(String userId, PasswordChangingModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.UserController.ChangePassword(String userId, PasswordChangingModel model)
+2024-08-25 23:02:57.704 +07:00 [Error] BadRequestException: "Wrong password, account will be locked if you enter it wrong 4 more times"
+SoftKiwiFlorist.Helpers.BadRequestException: Wrong password, account will be locked if you enter it wrong 4 more times
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.LoginAccountAsync(LoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.LoginAccount(LoginModel model)
+2024-08-25 23:44:44.010 +07:00 [Error] NotFoundException: "User not found"
+SoftKiwiFlorist.Helpers.NotFoundException: User not found
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 23:44:48.427 +07:00 [Error] NotFoundException: "User not found"
+SoftKiwiFlorist.Helpers.NotFoundException: User not found
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 23:45:27.563 +07:00 [Error] NotFoundException: "User not found"
+SoftKiwiFlorist.Helpers.NotFoundException: User not found
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 23:46:21.777 +07:00 [Error] NotFoundException: "User not found"
+SoftKiwiFlorist.Helpers.NotFoundException: User not found
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 23:48:32.703 +07:00 [Error] BadRequestException: "Invalid refresh token"
+SoftKiwiFlorist.Helpers.BadRequestException: Invalid refresh token
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.LogoutAccountAsync(LogoutModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.LogoutAccount(String userId)
+2024-08-25 23:48:40.267 +07:00 [Error] NotFoundException: "User not found"
+SoftKiwiFlorist.Helpers.NotFoundException: User not found
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()
+2024-08-25 23:48:44.458 +07:00 [Error] NotFoundException: "User not found"
+SoftKiwiFlorist.Helpers.NotFoundException: User not found
+   at SoftKiwiFlorist.Areas.Account.Services.AccountService.RefreshAccountAsync(RefreshLoginModel model)
+   at SoftKiwiFlorist.Areas.Account.Controllers.AccountController.RefreshAccount()

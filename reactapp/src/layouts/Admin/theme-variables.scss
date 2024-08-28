@@ -1,0 +1,30 @@
+@import "/src/styles/bases/variables";
+
+// ----------------------------------------------
+// Header
+// ----------------------------------------------
+$header-height: 70px;
+$navlink-padding: 8px 16px;
+$header-shadow: 1px 0px 20px 0px rgb(0 0 0 / 12%);
+
+// ----------------------------------------------
+// Sidebar
+// ---------------------------------------------- 
+$sidebar-text: $dark;
+
+$sidebar-link-padding: 12px 15px;
+$sidebar-icon-size: 23px;
+$sidebar-first-level-padding: 0 0 10px 0;
+$sidebar-first-level-link-padding: 10px 15px;
+$sidebar-first-level-icon-size: 14px;
+
+$sidebar-width-full: 270px;
+$sidebar-width-iconbar: 180px;
+$sidebar-width-mini: 87px;
+$sidebar-spacing-x: 0 24px;
+$link-disabled: 0.38;
+$sidebar-height: 65px;
+$sidebar-li-width: 240px;
+$sidebar-first-level-width: 400px;
+
+$boxed-width: 100%; // boxed layout width

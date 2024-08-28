@@ -1,0 +1,33 @@
+.element-arrow-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.element-arrow-buttons {
+  .element-arrow-button {
+    @include box-base(50px, 50px);
+    @include position-base(absolute, 50%, unset, unset, unset);
+    font-size: map-get($font-sizes, 4);
+    font-weight: $font-weight-bolder;
+    border-radius: $border-radius-circle;
+    opacity: 0.75;
+    color: $brown;
+    background-color: $white;
+    transition: all $transition-slow ease-out;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.15;
+    }
+    &:not(:disabled):hover {
+      opacity: 1;
+    }
+    &:first-child {
+      left: 10px;
+    }
+    &:last-child {
+      right: 10px;
+    }
+  }
+}

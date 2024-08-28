@@ -1,0 +1,76 @@
+.banners-wrapper {
+  @include box-base(1300px, 500px);
+  max-width: 100%;
+  @include screen-down-lg {
+    height: 400px;
+  }
+  .banners-slider {
+    @include box-base(100%, 100%);
+    .slide {
+      display: block;
+      img {
+        transform: $image-scale-inner;
+        animation: zoomIn 5s;
+        @keyframes zoomIn {
+          from {
+            transform: $image-scale;
+          }
+          to {
+            transform: $image-scale-inner;
+          }
+        }
+      }
+    }
+  }
+  .banners-buttons {
+    button {
+      @include box-base(50px, 50px);
+      @include position-base(absolute, 50%, unset, unset, unset);
+      border-radius: $border-radius-circle;
+      opacity: 0.75;
+      color: $white;
+      background-color: $brown;
+      transition: all $transition-slower;
+      &:hover {
+        opacity: 1;
+        color: $brown;
+        background-color: $white;
+      }
+      &:first-child {
+        left: 20px;
+      }
+      &:last-child {
+        right: 20px;
+      }
+    }
+    .prev-slide {
+      transform: translateX(-120px);
+    }
+    .next-slide {
+      transform: translateX(120px);
+    }
+  }
+  &:hover {
+    .prev-slide {
+      transform: translateX(0);
+    }
+    .next-slide {
+      transform: translateX(0);
+    }
+  }
+  .banners-dots {
+    @include position-base(absolute, unset, unset, 10px, unset);
+    width: 100%;
+    li {
+      @include box-base(15px, 15px);
+      border-radius: $border-radius-xxl;
+      background-color: $brown;
+      transition: all $transition-fast;
+      margin: map-get($spacers, 6);
+      cursor: pointer;
+      &.active {
+        width: 30px;
+      }
+    }
+  }
+}

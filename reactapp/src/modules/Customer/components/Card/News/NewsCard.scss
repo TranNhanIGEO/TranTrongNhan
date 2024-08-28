@@ -1,0 +1,22 @@
+@import '/src/styles/bases/variables';
+@import '/src/styles/utilities/mixin';
+
+.news-card {
+  position: relative;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  
+  .news-card-image {
+
+    img {
+      transition: all $transition-slower;
+    }
+
+    &:hover img {
+      transform: $image-scale-in;
+    }
+  }
+  
+  .news-card-detail {
+    @include position-base(absolute, unset, 10px, 10px, unset);
+  }
+}

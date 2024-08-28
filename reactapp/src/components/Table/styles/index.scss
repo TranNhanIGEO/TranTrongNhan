@@ -1,0 +1,71 @@
+@import "/src/styles/bases/variables";
+
+// Table
+table {
+  margin-bottom: 0 !important;
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 0;
+}
+
+thead > tr {
+  text-wrap: nowrap;
+}
+
+tr {
+  vertical-align: middle;
+}
+
+th {
+  cursor: pointer;
+  position: relative;
+}
+
+th > .table-sorting {
+  position: absolute;
+  right: 16px;
+  top: 0;
+  bottom: 0;
+  line-height: 12px;
+}
+
+th > .table-sorting::before,
+th > .table-sorting::after {
+  position: absolute;
+  opacity: 0.2;
+}
+
+th > .table-sorting::before {
+  content: '▲';
+  bottom: 50%;
+}
+
+th > .table-sorting::after {
+  content: '▼';
+  top: 50%;
+}
+
+th.asc > .table-sorting::before {
+  opacity: 0.6;
+}
+
+th.desc > .table-sorting::after {
+  opacity: 0.6;
+}
+
+td > p > span.table-searching {
+  background-color: $yellow;
+  color: $black;
+  padding: 2px 1px;
+  border-radius: 2px;
+}
+
+td > img {
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}

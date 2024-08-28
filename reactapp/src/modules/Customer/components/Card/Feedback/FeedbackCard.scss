@@ -1,0 +1,16 @@
+@import '/src/styles/bases/variables';
+@import '/src/styles/utilities/mixin';
+
+.feedback-card {
+  position: relative;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+
+  .feedback-card-rating img {
+    @include box-base(70px, 70px);
+  }
+
+  .feedback-card-logo {
+    @include position-base(absolute, unset, 10px, 0, unset);
+    @include box-base(100px, 100px);
+  }
+}

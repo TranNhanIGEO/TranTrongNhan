@@ -1,0 +1,8 @@
+// Redefine Bootstrap's variables
+@import "./fonts";
+@import "./variables";
+@import '/node_modules/bootstrap/scss/bootstrap';
+
+// Reboot css styles
+@import "./reset";
+@import "./typography";

@@ -1,0 +1,11 @@
+.notes-content {
+  position: unset;
+  
+  .notes-content-image {
+    @include position-base(absolute, 72px, 56px);
+    @include screen-down-lg {
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+}

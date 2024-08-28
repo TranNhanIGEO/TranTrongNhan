@@ -1,0 +1,46 @@
+@import '/src/styles/bases/variables';
+@import '/src/styles/utilities';
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+
+  .header-wrapper {
+    position: relative;
+
+    .header-content {
+      min-height: 150px;
+
+      .header-logo {
+        @include box-base(200px, auto);
+      }
+      
+      .header-action {
+        max-width: 200px;
+        @include screen-down-md {
+          @include position-base(absolute, unset, 0, 4px, unset);
+        }
+      }
+    }
+
+    .header-navigation > ul {
+      li {
+        position: relative;
+        color: $brown;
+
+        &:hover a::before {
+          width: 50px;
+        }
+        
+        a::before {
+          @include position-base(absolute, unset, unset, 5px, 50%);
+          content: "";
+          transform: translateX(-50%);
+          height: 2px;
+          width: 0px;
+          background: $brown;
+          transition: all $transition-faster linear;
+        }
+      }
+    }
+  }
+}

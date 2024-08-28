@@ -1,0 +1,90 @@
+@import "./theme-variables";
+@import "/src/styles/utilities/mixin";
+
+.page-wrapper {
+  position: relative;
+}
+
+.body-wrapper {
+  position: relative;
+
+  > .container-fluid {
+    max-width: $boxed-width;
+    margin: 0 auto;
+    padding: $grid-gutter-width;
+    transition: 0.2s ease-in;
+  }
+
+  > .app-main {
+    min-height: 100vh;
+  }
+}
+
+@include screen-down-md {
+  .body-wrapper {
+    > .container-fluid {
+      padding: 30px 20px;
+    }
+  }
+}
+
+.page-wrapper {
+  &.sidebar-fixed {
+    .left-sidebar {
+      position: fixed;
+      top: 0;
+    }
+  }
+
+  &.header-fixed {
+    .app-header {
+      position: fixed;
+      z-index: 10;
+    }
+
+    .body-wrapper {
+      > .container-fluid {
+        padding-top: calc(#{$header-height} + $grid-gutter-width);
+        padding-bottom: $grid-gutter-width * 2;
+      }
+    }
+  }
+}
+
+@include screen-up-xxl {
+  .page-wrapper {
+    &.header-fixed.mini-sidebar {
+      .app-header {
+        width: calc(100%);
+      }
+    }
+
+    &.header-fixed {
+      .app-header {
+        width: calc(100% - #{$sidebar-width-full});
+      }
+    }
+
+    &.full-sidebar {
+      .body-wrapper {
+        margin-left: $sidebar-width-full;
+      }
+    }
+  }
+}
+
+@include screen-down-xxl {
+  .page-wrapper {
+    &.mini-sidebar {
+      .left-sidebar {
+        left: 0;
+      }
+    }
+    
+    &.full-sidebar {
+      .left-sidebar {
+        left: -$sidebar-width-full;
+      }
+    }
+  }
+}

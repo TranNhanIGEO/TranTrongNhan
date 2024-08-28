@@ -1,0 +1,47 @@
+@import '/src/styles/bases/variables';
+@import '/src/styles/utilities';
+
+.sidebar {
+  @include position-base(fixed, 0, unset, unset, 0);
+  @include box-base(400px, 100%);
+  z-index: $z-index-sidebar;
+  overflow: hidden;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all $transition-fast ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  &.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .sidebar-container {
+    height: inherit;
+    color: $black;
+    background-color: $white;
+    .sidebar-header {
+      position: relative;
+      .sidebar-logo {
+        @include box-base(250px, 200px);
+        position: relative;
+      }
+    }
+    .sidebar-body {
+      padding: 1.6rem;
+      .sidebar-wrapper {
+        .sidebar-menu-items {
+          li {
+            width: 100%;
+            text-wrap: nowrap;
+            border-radius: $border-radius-lg;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            button {
+              background-color: inherit;
+              color: inherit;
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

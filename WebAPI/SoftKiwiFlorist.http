@@ -1,0 +1,6 @@
+@SoftKiwiFlorist_HostAddress = http://localhost:5255
+
+GET {{SoftKiwiFlorist_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

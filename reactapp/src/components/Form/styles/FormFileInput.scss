@@ -1,0 +1,20 @@
+@import '/src/styles/bases/variables';
+@import '/src/styles/utilities/mixin';
+
+.element-uploadfile {
+  @include element-flex-center;
+  position: relative;
+  flex-direction: column;
+  min-height: 200px;
+  border-radius: 12px;
+  border: 1px dashed $blue;
+  padding: map-get($spacers, 3);
+
+  .img-thumbnail {
+    width: 50%;
+  }
+
+  @include screen-down-md {
+    width: 100%;
+  }
+}
